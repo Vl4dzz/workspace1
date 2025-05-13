@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Formular de înregistrare</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background: url('https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5152x3435+0+0/resize/5152x3435!/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fa5%2F1f%2Fe4077fab425691b76ecec0376bf8%2Fap24329270004727.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+    #navbar {
+      background-color: #333;
+      padding: 10px 0;
+    }
+
+    #navbar nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    #navbar nav ul li {
+      margin: 0 15px;
+    }
+
+    #navbar nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    #navbar nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      background: white;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      width: 300px;
+      text-align: center;
+      margin: 40px auto;
+    }
+
+    h2 {
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      text-align: left;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background-color: #555;
+      color: white;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .login-link {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .login-link a {
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .login-link a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div id="navbar">
+    <nav>
+      <ul>
+        <li><a href="index.html">Acasă</a></li>
+        <li><a href="register.html">Înregistrează-te</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="logout.html">Logout</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="container">
+    <h2>Formular de înregistrare</h2>
+    <form>
+      <label for="nume">Nume:</label>
+      <input type="text" id="nume" placeholder="Nume">
+
+      <label for="prenume">Prenume:</label>
+      <input type="text" id="prenume" placeholder="Prenume">
+
+      <label for="telefon">Telefon:</label>
+      <input type="text" id="telefon" placeholder="+373...">
+
+      <label for="parola">Parolă:</label>
+      <input type="password" id="parola" placeholder="Parolă">
+
+      <button type="submit">Înregistrează-te</button>
+    </form>
+    <div class="login-link">
+      Ai deja cont? <a href="login.html">Login</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 MyApp. Toate drepturile rezervate.</p>
+    <p>Contact: support@myapp.com</p>
+  </footer>
+
+</body>
+</html>
