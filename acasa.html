@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acasă</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url("https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5152x3435+0+0/resize/5152x3435!/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fa5%2F1f%2Fe4077fab425691b76ecec0376bf8%2Fap24329270004727.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background-color: #2c2c2c;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .navbar a.active {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #2c2c2c;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="acasa.html" class="active">Acasă</a>
+        <a href="register/register.html">Înregistrează-te</a>
+        <a href="login/login.html">Login</a>
+        <a href="logout/logout.html">Logout</a>
+    </nav>
+
+    <footer>
+        <p>© 2025 MyApp. Toate drepturile rezervate.</p>
+        <p>Contact: support@myapp.com</p>
+    </footer>
+</body>
+</html>
